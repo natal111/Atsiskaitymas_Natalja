@@ -47,29 +47,31 @@
 </header>
 
 <body>
-    <table class="prisijungimas">
-        <tr>
-            <td>
-                <form action="anketa.html">
-                    <input type="email" placeholder="El.paštas" data-entry="email" required="required">
-                    <input type="password" placeholder="Slaptažodis" data-entry="password" required="required">
-                    <div>
-                        <input type="checkbox" id="chk">
-                        <label for="chk">Prisiminti manę</label>
+    <div class="prisijungimas">
+        <table>
+            <tr>
+                <td>
+                    <form action="anketa.html">
+                        <input type="email" placeholder="El.paštas" data-entry="email" required="required">
+                        <input type="password" placeholder="Slaptažodis" data-entry="password" required="required">
+                        <div>
+                            <input type="checkbox" id="chk">
+                            <label for="chk">Prisiminti manę</label>
+                        </div>
+                        <p id="prisijungti"><button type="submit">Prisijungti</button></p>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="registracija">
+                        <label for="reg">Dar neužsiregistravote?</label>
+                        <button type="submit" id="reg" onclick="Register()">Registruotis</button>
                     </div>
-                    <p id="prisijungti"><button type="submit">Prisijungti</button></p>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="registracija">
-                    <label for="reg">Dar neužsiregistravote?</label>
-                    <button type="submit" id="reg" onclick="Register()">Registruotis</button>
-                </div>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
