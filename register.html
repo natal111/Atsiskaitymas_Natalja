@@ -12,11 +12,7 @@
 
     <link rel="stylesheet" href="src\style.css">
     <title>Prisijungimas</title>
-    <script>
-        function Register() {
-            window.location.href = "register.html";
-        }
-    </script>
+
 </head>
 <header>
     <div class="virs">
@@ -47,29 +43,41 @@
 </header>
 
 <body>
-    <table class="prisijungimas">
-        <tr>
-            <td>
-                <form action="anketa.html">
-                    <input type="email" placeholder="El.paštas" data-entry="email" required="required">
-                    <input type="password" placeholder="Slaptažodis" data-entry="password" required="required">
-                    <div>
-                        <input type="checkbox" id="chk">
-                        <label for="chk">Prisiminti manę</label>
-                    </div>
-                    <p id="prisijungti"><button type="submit">Prisijungti</button></p>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="registracija">
-                    <label for="reg">Dar neužsiregistravote?</label>
-                    <button type="submit" id="reg" onclick="Register()">Registruotis</button>
-                </div>
-            </td>
-        </tr>
-    </table>
+
+    <form class="prisijungimas" action="anketa.html">
+
+        <table>
+            <th colspan="2" class="tablehead">
+                <p id="prisijungti">Naujo vartotojo registracija</p>
+            </th>
+            <tr>
+                <td class="tabletext">Vardas</td>
+                <td><input type="text" name="firstname" required="required" /></td>
+            </tr>
+            <tr>
+                <td class="tabletext">Pavardė</td>
+                <td><input type="text" name="lastname" required="required" /></td>
+            </tr>
+            <tr>
+                <td class="tabletext">El.paštas</td>
+                <td><input type="text" name="email" required="required" /></td>
+            </tr>
+            <tr>
+                <td class="tabletext">Slaptažodis</td>
+                <td><input type="password" name="psw" required="required" /></td>
+            </tr>
+            <tr>
+                <td class="tabletext">Pakartokite slaptažodį</td>
+                <td><input type="password" name="cpsw" required="required" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="prisijungti"><button type="submit">Registruotis</button></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 
 </html>
