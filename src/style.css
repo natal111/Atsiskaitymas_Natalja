@@ -35,16 +35,18 @@ nav {
 
 .logo {
     float: left;
-    /*padding: 15px;*/
 }
 
 button {
-    float: right;
     padding: 3px 15px 3px 15px;
     font-size: 15px;
     background-color: gray;
     color: white;
     border: 0 solid black;
+}
+
+#right {
+    float: right;
 }
 
 nav ul li {
@@ -81,4 +83,16 @@ button:hover {
 .patinka {
     font-size: 24px;
     padding: 0 0 0 10px;
+}
+
+.prisijungimas {
+    position: fixed;
+    top: 40%;
+    left: 33%;
+    font-size: large;
+    line-height: 1.5;
+}
+
+#prisijungti {
+    text-align: center;
 }

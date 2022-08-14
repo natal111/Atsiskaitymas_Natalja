@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="src\style.css">
+    <title>Prisijungimas</title>
+</head>
+<header>
+    <div class="virs">
+        <a class="logo" href="index.html">LOGO</a>
+
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Item 1</a></li>
+            <li>|</li>
+            <li>
+                <a href="#">Item 2</a></li>
+            <li>|</li>
+            <li>
+                <a href="#">Item 3</a></li>
+            <li>
+                <div class="paieska">
+                    <form action="#">
+                        <input type="text" placeholder="Iveskite texta" name="search">
+                        <button type="submit" class="searchButton" id="right">
+                        <i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <form class="prisijungimas" action="klientoKabinetas.html">
+        <input type="email" placeholder="El.paštas" data-entry="email" required="required">
+        <input type="password" placeholder="Slaptažodis" data-entry="password" required="required">
+        <div>
+            <input type="checkbox" id="chk">
+            <label for="chk">Prisiminti manę</label>
+        </div>
+        <p id="prisijungti"><button type="submit">Prisijungti</button></p>
+    </form>
+</body>
+
+</html>
