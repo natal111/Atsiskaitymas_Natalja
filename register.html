@@ -11,7 +11,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <link rel="stylesheet" href="src\style.css">
-    <title>Prisijungimas</title>
+    <title>Naujienų puslapis - Registracija</title>
+
+    <script>
+        function Anketa() {
+            window.location.href = "anketa.html";
+        }
+    </script>
 
 </head>
 <header>
@@ -44,11 +50,11 @@
 
 <body>
 
-    <form class="prisijungimas" action="anketa.html">
+    <form class="prisijungimas" action="anketa.html" method="post">
 
         <table>
             <th colspan="2" class="tablehead">
-                <p id="prisijungti">Naujo vartotojo registracija</p>
+                <p id="prisijungti">Įveskite savo duomenis</p>
             </th>
             <tr>
                 <td class="tabletext">Vardas</td>
@@ -72,7 +78,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <p id="prisijungti"><button type="submit">Registruotis</button></p>
+                    <p id="prisijungti"><button type="submit">Patvirtinti</button></p>
                 </td>
             </tr>
         </table>

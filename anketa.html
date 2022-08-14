@@ -11,17 +11,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <link rel="stylesheet" href="src\style.css">
-    <title>Naujienų puslapis - Prisijungimas</title>
-    <script>
-        function Register() {
-            window.location.href = "register.html";
-        }
-    </script>
+    <title>Naujienų puslapis - Anketa</title>
+
 </head>
 <header>
     <div class="virs">
         <a class="logo" href="index.html">LOGO</a>
-
+        <button type="submit" id="right" onclick="window.location.href = 'index.html'">Atsijungti</button>
     </div>
     <nav>
         <ul>
@@ -47,29 +43,34 @@
 </header>
 
 <body>
-    <table class="prisijungimas">
-        <tr>
-            <td>
-                <form action="anketa.html">
-                    <input type="email" placeholder="El.paštas" data-entry="email" required="required">
-                    <input type="password" placeholder="Slaptažodis" data-entry="password" required="required">
-                    <div>
-                        <input type="checkbox" id="chk">
-                        <label for="chk">Prisiminti manę</label>
-                    </div>
-                    <p id="prisijungti"><button type="submit">Prisijungti</button></p>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="registracija">
-                    <label for="reg">Dar neužsiregistravote?</label>
-                    <button type="submit" id="reg" onclick="Register()">Registruotis</button>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <p class="coment">Sveiki, Jonas</p>
+
+    <form class="prisijungimas" action="register.html">
+
+        <table>
+            <th colspan="2" class="tablehead">
+                <p id="prisijungti">Jūsų duomenys</p>
+            </th>
+            <tr>
+                <td class="anketa">Vardas</td>
+                <td class="anketa">Jonas</td>
+            </tr>
+            <tr>
+                <td class="anketa">Pavardė</td>
+                <td class="anketa">Jonaitis</td>
+            </tr>
+            <tr>
+                <td class="anketa">El.paštas</td>
+                <td class="anketa">jonas@paštas.lt"</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="prisijungti"><button type="submit">Keisti duomenis</button></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 
 </html>
